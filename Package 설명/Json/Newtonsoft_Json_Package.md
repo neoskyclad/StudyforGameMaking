@@ -220,11 +220,14 @@ public class ㅇㅇㅇ : MonoBehaviour{
 
 ### 8. 팁
 
-4. Vector3도 Json 하면 별로 안좋다 그래서 필요한거만 담는 새로운 클래스를 만드는것을 추천한다.
-
+1. Vector3도 Json 하면 별로 안좋다 그래서 필요한거만 담는 새로운 클래스를 만드는것을 추천한다.
+2. 직렬화 하고싶은것, 안하고 싶은것을 정할 수 있다
+   1. [ JsonIgnore] 을 통해서 직렬화 안하고 싶은것을 선택할 수 있다.
 
 ----
 
 ## 참고한 블로그
 Newtonsoft Json의 특징
 : <https://json2csharp.com/>
+: <https://www.newtonsoft.com/json/help/html/JsonObjectAttributeOptIn.htm>
+: <https://stackoverflow.com/questions/32008869/json-net-serialize-specific-private-field>
