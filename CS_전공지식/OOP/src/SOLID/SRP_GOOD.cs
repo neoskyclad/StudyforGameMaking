@@ -19,12 +19,12 @@ class BlogPost
 //BlogPost 클래스에서 인쇄 방법을 제거
 interface IPrintableBlogPost
 {
-    public print(BlogPost _blogPost);
+    public string print(BlogPost _blogPost);
 }
 
 class JsonBlogPostPrinter : IPrintableBlogPost
 {
-    public print(BlogPost _blogPost)
+    public string print(BlogPost _blogPost)
     {
         return json_encode(_blogPost.getData());
     }
@@ -32,7 +32,7 @@ class JsonBlogPostPrinter : IPrintableBlogPost
 
 class HtmlBlogPostPrinter : IPrintableBlogPost
 {
-    public print(BlogPost _blogPost)
+    public string print(BlogPost _blogPost)
     {
         return $"{_blogPost.getData().title}" +
             $"{_blogPost.getData().date.setFormat("Y-m-d H:i:s")}" +
