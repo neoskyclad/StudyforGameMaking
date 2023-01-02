@@ -12,8 +12,7 @@
 
 #### 폴더목차
 - [CS 스터디](./CS_전공지식/README.md)
-- [Unity 패키지설명](./Package_설명/README.md)
-
+- [Unity 툴 스터디](./Unity/README.md)
 
 ---
 
